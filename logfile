@@ -1,0 +1,7 @@
+2020-11-30 22:07:56.319 JST [6440] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2020-11-30 22:07:56.320 JST [6440] LOG:  listening on IPv6 address "::1", port 5432
+2020-11-30 22:07:56.320 JST [6440] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-11-30 22:07:56.321 JST [6440] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-11-30 22:07:56.326 JST [6441] LOG:  database system was shut down at 2020-11-30 22:06:47 JST
+2020-11-30 22:07:56.334 JST [6440] LOG:  database system is ready to accept connections
+2020-11-30 22:08:09.749 JST [6474] FATAL:  database "facebookclone_development" does not exist
