@@ -37,6 +37,9 @@ class FeedsController < ApplicationController
     end
   end
 
+  def confirm
+      @feed = Feed.new(feed_params)
+    end
   # PATCH/PUT /feeds/1
   # PATCH/PUT /feeds/1.json
   def update
