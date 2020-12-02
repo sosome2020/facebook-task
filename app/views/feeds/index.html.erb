@@ -18,9 +18,12 @@
         <td><%=image_tag feed.image.url%></td>
         <td><%= feed.content %></td>
           <td><%= feed.user.name %></td>
-        <td><%= link_to 'Show', feed %></td>
-        <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
-        <td><%= link_to 'Destroy', feed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <div class="btn-group">
+              <td>
+          <button type="button" class="btn btn-primary"><%= link_to 'Show', feed %></button>
+          <button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_feed_path(feed) %></button>
+          <button type="button" class="btn btn-primary"><%= link_to 'Destroy', feed, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+        </div>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +31,5 @@
 
 <br>
 
-<%= link_to 'New Feed', new_feed_path %>
+
+<button type="button" class="btn btn-success"><%= link_to 'New Feed', new_feed_path %></button>
