@@ -38,8 +38,8 @@ class FeedsController < ApplicationController
   end
 
   def confirm
-      @feed = Feed.new(feed_params)
-    end
+    @feed = Feed.new(feed_params)
+  end
   # PATCH/PUT /feeds/1
   # PATCH/PUT /feeds/1.json
   def update
@@ -66,12 +66,12 @@ class FeedsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_feed
-      @feed = Feed.find(params[:id])
-    end
+  def set_feed
+    @feed = Feed.find(params[:id])
+  end
 
     # Only allow a list of trusted parameters through.
-    def feed_params
-      params.require(:feed).permit(:image, :content , :image_cache, :user_id)
-    end
+  def feed_params
+    params.require(:feed).permit(:image, :content , :image_cache, :user_id)
+  end
 end
